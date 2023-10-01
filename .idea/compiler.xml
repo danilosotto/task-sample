@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SourceAPITask" />
+        <module name="task-sample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SourceAPITask" target="1.8" />
       <module name="spring-cloud-task-example" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SourceAPITask" options="-parameters" />
       <module name="spring-cloud-task-example" options="-parameters" />
+      <module name="task-sample" options="-parameters" />
     </option>
   </component>
 </project>
